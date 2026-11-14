@@ -1,6 +1,6 @@
-# Example Student
+# Example Mentor - Hi, my name is Eric.
 
-Favorite robot part: the swerve modules
+Favorite robot part: Time will tell.
 
 (Copy this file, name it after yourself, for example `maya.md`, and change the two lines.)
 

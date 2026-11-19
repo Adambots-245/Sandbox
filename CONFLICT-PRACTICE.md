@@ -2,7 +2,7 @@
 
 Goal: make a merge conflict on purpose, then fix it in VS Code. This branch is only for practice: **no pull request, and it never goes into `main`.**
 
-Your mentor gives each pair a number. Below, replace `N` with it.
+Pair up first. Your mentor gives each pair a number; below, replace `N` with it. Decide who is **Partner A** and who is **Partner B**. Each partner needs **their own laptop with their own Sandbox clone** (a conflict needs two separate copies). If you shared a laptop earlier, team up with another pair: one laptop is A, the other is B.
 
 ## Round 1: `kIntakeSpeed`
 1. **Partner A:** on `main`, click **Sync**. Click the branch name (bottom-left) → **Create new branch** → `pair-N`. Then click **Publish Branch**.

@@ -2,20 +2,25 @@ package first.robot.subsystems;
 
 import org.wpilib.command3.Command;
 import org.wpilib.command3.Mechanism;
-import org.wpilib.drivers.motor.PWMSparkMax;
+import org.wpilib.drivers.motor.PWMTalonFX;
 import org.wpilib.hardware.discrete.DigitalInput;
 
 import first.robot.Constants;
 
 /** The intake: one motor that pulls game pieces in, and a beam break that sees them. */
 public class Intake implements Mechanism {
-  private final PWMSparkMax motor;
+  private final PWMTalonFX motor;
   private final DigitalInput beamBreak;
 
   public Intake() {
-    motor = new PWMSparkMax(Constants.kIntakeMotorChannel);
+    motor = new PWMTalonFX(Constants.kIntakeMotorChannel);
     beamBreak = new DigitalInput(Constants.kBeamBreakChannel);
     System.out.println("Intake ready on channel " + Constants.kIntakeMotorChannel);
+  }
+
+  /** Runs every loop, whatever command is running. Good for reading sensors and sending telemetry. */
+  public void periodic() {
+    // Nothing yet.
   }
 
   /** True when the beam break sees a game piece (the beam is blocked). */
